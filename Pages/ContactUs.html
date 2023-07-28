@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- theme style css-->
+    <link rel="stylesheet" id="theme" href="../CSS/Dark.css">
+    <!-- global style css-->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <!-- page specific style css -->
+    <link rel="stylesheet" href="../CSS/ContactUs.css">
+
+    <title>Nure</title>
+</head>
+
+<body>
+    <!-- dynamic header -->
+    <header id="header" class="sticky-top"></header>
+    <!-- main content -->
+    <section class="contactUs mb-4">
+        <h3 class="text-center mb-4">Contact Us</h3>
+        <div class="container">
+            <div class="row g-0  h-100 justify-content-center">
+                <!-- company contact info -->
+                <div class="col col-12 col-sm-6 secondary-bg">
+                    <h4 class="text-center pt-3 mb-5">Reach us</h4>
+                    <div class="container d-flex flex-column justify-content-between mb-3 " style="min-height:200px ;">
+                        <p class="ms-4 fs-5"><strong class="me-3"><i class="fa-solid fa-envelope"></i></strong>
+                            xyz12@abc.com</p>
+                        <p class="ms-4 fs-5"> <strong class="me-3"><i class="fa-solid fa-phone"></i></strong> 123456789
+                        </p>
+                        <p class="ms-4 fs-5"><strong class="me-3"><i class="fa-solid fa-location-dot"></i></strong>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="ms-4 fs-5"><strong class="me-3"><i class="fa-solid fa-business-time"></i></strong>Mon
+                            - Fri / 10am - 6pm</p>
+                    </div>
+                </div>
+                <!-- form to send a message/query -->
+                <div class="col col-12 col-sm-6 d-flex flex-column secondary-border primary-bg">
+                    <h4 class="text-center  pt-3">Send your Message</h4>
+                    <div class="container p-4">
+                        <form class="d-flex flex-column" action="">
+                            <input class="form-control rounded-0 mb-3 p-2" type="text" name="name"
+                                placeholder="Full Name">
+                            <input class="form-control rounded-0 mb-3 p-2" type="email" name="email"
+                                placeholder="Email ID">
+                            <textarea class="form-control rounded-0 mb-3 p-2" name="message"
+                                placeholder="Messages"></textarea>
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dynamic footer -->
+    <Footer id="footer"></Footer>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Js for dynamic header and footer -->
+    <script src="../JavaScript/NavNFooter.js"></script>
+</body>
+
+</html>

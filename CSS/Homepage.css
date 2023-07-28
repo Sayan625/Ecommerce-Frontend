@@ -1,0 +1,67 @@
+/* hero section and its components style */
+.hero {
+    height: 100vh;
+    background-image: url(../Images/fernando-lavin-fi5YSQfxbVk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.heroText {
+    transform: translateY(-30%);
+    backdrop-filter: blur(2px);
+    color: var(--text);
+}
+.heroText,
+.heroText a {
+    color: azure;
+    font-style: italic;
+}
+
+/* overlay  for contrast over the background image */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* brand components style */
+.brandName {
+    font-size: 8rem;
+}
+.brand {
+    border-right: 1px solid white;
+
+}
+
+/* customizing booststrap css class */
+.text-justify {
+    text-align: justify;
+}
+.col {
+    max-width: 15rem;
+}
+
+
+/* media query for carousel for large screen */
+@media only screen and (max-width: 768px) {
+    .brand {
+        border-right: none;
+
+    }
+
+    .brandName {
+        font-size: 4rem;
+    }
+
+    .col:nth-child(2n) {
+
+        display: none;
+    }
+}
+
+/* media query for carousel for medium screen */
+
+@media only screen and (max-width: 576px) {
+    .col:nth-child(1) {
+
+        display: none;
+    }
+}

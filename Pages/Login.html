@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font-awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- theme style css -->
+    <link rel="stylesheet" id="theme" href="../CSS/Dark.css">
+    <!-- global style css -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <!-- page specific css -->
+    <link rel="stylesheet" href="../CSS/Login.css">
+
+    <title>Nure</title>
+
+</head>
+
+<body>
+    <!-- dynamic header -->
+    <header id="header" class="sticky-top"></header>
+    <!-- main content -->
+    <section class="login">
+        <div class="container position-static bottom-0">
+            <div class="row px-3 h-100  align-items-center justify-content-center">
+                <div class="card col-12 col-md-6 g-0">
+                    <!-- title -->
+                    <h3 class="card-header text-center">Login</h3>
+                    <div class="card-body">
+                        <!-- form -->
+                        <form id="loginForm">
+                            <!-- email input -->
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control rounded-0" id="InputEmail"
+                                    aria-describedby="emailHelp" placeholder="Enter your email" required>
+                            </div>
+                            <!-- password input -->
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" name="password" class="form-control rounded-0" id="InputPassword"
+                                        placeholder="Enter your password" required>
+                                    <button class="btn" type="button" id="toggle" are><i class="fa-regular fa-eye-slash"></i></button>
+                                </div>
+                            </div>
+                            <!-- submit button -->
+                            <button type="submit" id="submit" class="btn w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dynamic footer -->
+    <footer id="footer"></footer>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <!-- Js for dynamic header and footer -->
+    <script src="../JavaScript/NavNFooter.js"></script>
+    <!-- page specific Js -->
+    <script src="../JavaScript/Login.js"></script>
+</body>
+
+</html>

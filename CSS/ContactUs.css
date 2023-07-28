@@ -1,0 +1,15 @@
+/* Contact Us section style */
+.contactUs{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* custom column width */
+.col{
+    max-width: 25rem;
+}

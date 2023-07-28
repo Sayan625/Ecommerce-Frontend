@@ -1,0 +1,105 @@
+/* light theme color variables */
+:root {
+    --primary:  #f3f3f3;
+    --secondary: #db3a3f;
+    --grad1:#c8deff;
+    --grad2:#ffffff;
+    --text:#333333;
+  }
+
+/* light theme body style */
+body{
+    background-image: linear-gradient(to bottom right,  var(--grad1)   50%, var(--grad2) );
+    color: var(--text);
+ 
+}
+
+/* light theme navbar, footer and its elements style */
+.navbar, .footer{
+    background-color: var(--primary);
+    color: var(--text);
+
+}
+a, .navbar a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+/*light theme button and it elements style  */
+.btn{
+    border: 1px solid var(--secondary);
+    color: var(--text);
+    border-radius: 0;
+}
+.btn:hover{
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+/*light theme form style  */
+.form-control{
+    border: 1px solid var(--secondary);
+}
+
+/*light theme card and it elements style  */
+.card{
+    background-color: var(--primary);
+    color: var(--text);
+    border: 1px solid var(--secondary);
+    border-radius: 0;
+
+}
+.card-body{
+    border-top: 1px solid var(--secondary);
+}
+
+/*light theme nav-link, link and its elements color */
+.nav-link, .colorSecondery{
+    color: var(--secondary);
+}
+.nav-link:hover, .nav-link.active{
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+}
+.link{
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* custom classes to targeting backgrounf, border and text colors */
+.bgGradient{
+    background-image: linear-gradient(  var(--grad1)   50%, var(--grad2) );
+    color: var(--text);
+}
+.primary-bg{
+    background-color: var(--primary);
+    color: var(--text);
+}
+.secondary-bg{
+    background-color: var(--secondary);
+    color: var(--primary)
+
+}
+.secondary-border{
+    border: 1px solid var(--secondary);
+}
+.secondary-border-Top{
+    border-top: 1px solid var(--secondary);
+}
+.secondary-border-Bottom{
+    border-bottom: 1px solid var(--secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

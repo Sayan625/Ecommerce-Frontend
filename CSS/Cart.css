@@ -1,0 +1,19 @@
+/* cart section style */
+.cart {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    
+}
+
+/* cart product details media query for large screens */
+@media only screen and (max-width: 768px){
+    .productDetails{
+        align-items: center;
+    }
+
+}

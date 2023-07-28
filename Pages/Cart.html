@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font-awsome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Theme styles -->
+    <link rel="stylesheet" id="theme" href="../CSS/Dark.css">
+    <!-- Global style -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <!-- Page specific style -->
+    <link rel="stylesheet" href="../CSS/Cart.css">
+    <title>Nure</title>
+</head>
+
+<body>
+    <!-- Dynamic header -->
+    <header id="header" class="sticky-top"></header>
+    <!-- main content -->
+    <section class="cart">
+        <div class="container ">
+            <div class="row m-3  h-100 justify-content-center">
+                <div class="col-12 col-md-7 mb-3">
+                    <!-- cart with product details -->
+                    <div class="card">
+                        <h3 class="card-header text-center">Cart</h3>
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <!--  product image -->
+                                <div class="col-12 col-md-4 p-1">
+                                    <img src="../Images/Plain-Blue-T-Shirt-Transparent-Image.png"
+                                        class="img-fluid h-100" alt="...">
+                                </div>
+                                <div class="col-12 col-md-4 p-1">
+                                    <!-- Product details -->
+                                    <div class="productDetails h-100 d-flex flex-column justify-content-between">
+                                        <p class="name fs-5 ">Lorem ipsum dolor</p>
+                                        <div class="Price mt-1 d-flex fw-bold align-items-center mb-2 ">
+                                            <!-- product price details -->
+                                            <p class="text-decoration-line-through me-2 ">₹1000</p>
+                                            <p class="Price d-flex fs-5">₹ <span id="price">550</span></p>
+                                        </div>
+                                        <!-- product size -->
+                                        <p class="mb-2">Size: <span class="fs-5">M</span></p>
+                                        <!-- product price difference -->
+                                        <p class="mb-2">Saved <span class="fs-5">₹450</span></p>
+                                        <!-- view option -->
+                                        <a href="./ProductDetails.html" class="btn my-2 w-100">view</a>
+
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-12 col-md-4 p-1 d-flex flex-column justify-content-between align-items-center">
+                                    <!-- item counter -->
+                                    <div class="NoOfItem  d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-sm  me-1 fs-6" id="decrementor"><i
+                                                class="fa-solid fa-minus"></i></button>
+                                        <p class=" px-2 me-1 mb-0 secondary-border" id="itemCounter">1</p>
+                                        <button class="btn btn-sm fs-6" id="incrementor"><i
+                                                class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                    <!-- item delete button -->
+                                    <button class="btn btn-danger mt-3 "><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 mb-3 ">
+                    <!-- cart summery -->
+                    <div class="card summery">
+                        <h3 class="card-header text-center">Summery</h3>
+                        <div class="card-body d-flex flex-column justify-content-between text-center">
+                            <!-- Item cost -->
+                            <div class="mb-2 d-flex justify-content-between align-items-center">
+                                <p>Cost</p>
+                                <p>₹<span id="itemCost"></span></p>
+                            </div>
+                            <!-- Shipping cost -->
+                            <div class="mb-2 d-flex justify-content-between align-items-center">
+                                <p>Shipping</p>
+                                <p>₹<span id="shippingCost">100</span></p>
+                            </div>
+                            <!-- Total cost -->
+                            <div class="my-3  d-flex justify-content-between align-items-center secondary-border-Top">
+                                <p>Total</p>
+                                <p>₹<span id="total">100</span> </p>
+                            </div>
+                            <!-- check out option -->
+                            <button type="submit" class="btn">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dynamic footer -->
+    <Footer id="footer"></Footer>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Js for Dynamic footer and header -->
+    <script src="../JavaScript/NavNFooter.js"></script>
+    <!-- page specific Js -->
+    <script src="../JavaScript/Cart.js"></script>
+
+</body>
+
+</html>
