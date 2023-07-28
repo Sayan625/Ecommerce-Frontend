@@ -26,7 +26,7 @@ toggle.addEventListener('click', () => {
 
 //setting active nav link based on current page
 for (let link of links) {
-    if (link.href === window.location.href) {
+    if (window.location.href.indexOf(link.href)>-1) {
         link.classList.add("active")
         if (link.classList.contains("dropdown-item"))
         link.parentElement.parentElement.parentElement.firstElementChild.classList.add("active")
@@ -130,7 +130,7 @@ function header(){
     <a class="nav-link" href="./ContactUs.html">Contacts</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" id="themeToggle"><i class="fa-solid fa-toggle-on fs-5"></i></a>
+    <a class="nav-link" id="themeToggle" href="#"><i class="fa-solid fa-toggle-on fs-5"></i></a>
     </li>
     </ul>`
 
