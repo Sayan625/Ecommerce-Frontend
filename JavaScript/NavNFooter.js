@@ -38,12 +38,12 @@ for (let link of links) {
 function SetTheme(theme) {
     if (theme) {
         if (theme === "dark") {
-            document.getElementById("theme").setAttribute("href", "../CSS/Dark.css")
+            document.getElementById("theme").setAttribute("href", "./CSS/Dark.css")
             toggle.innerHTML = toggleOn()
             return "dark"
         }
         else if (theme === "light") {
-            document.getElementById("theme").setAttribute("href", "../CSS/Light.css")
+            document.getElementById("theme").setAttribute("href", "./CSS/Light.css")
             toggle.innerHTML = toggleOff()
             return "light"
 
